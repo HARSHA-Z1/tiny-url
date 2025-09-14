@@ -8,7 +8,7 @@ shortenBtn.addEventListener("click", async () => {
   shortenedResult.textContent = "Generating...";
 
   try {
-    const response = await fetch("http://localhost:8080/shorten", {
+    const response = await fetch("https://shorturl-trlf.onrender.com/shorten", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ url: longUrl })
